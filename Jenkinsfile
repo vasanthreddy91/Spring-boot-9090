@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/vasanthreddy91/Spring-boot-9090.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 bat 'mvn clean package'
